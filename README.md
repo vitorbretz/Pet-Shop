@@ -1,0 +1,2 @@
+# Pet-Shop
+ Aqui, seu pet recebe todo o carinho e cuidado que merece. Contamos com uma variedade de produtos para garantir o bem-estar do seu melhor amigo, desde rações e petiscos até brinquedos e acessórios que trazem mais conforto e diversão. Além disso, oferecemos serviços de banho e tosa para manter seu bichinho sempre limpo e saudável. Nossa equipe está pronta para atender com amor e dedicação, proporcionando tudo o que seu pet precisa para viver feliz.
