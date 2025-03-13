@@ -1,1 +1,25 @@
-/*configuraçao que sao aplicadas a todas as paginas, podendo ter configuraçao de elementos  ou variaveis* /
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+ul,
+p,
+blockquote {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}

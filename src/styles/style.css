@@ -1,0 +1,5 @@
+@import "./global.css";
+@import "./vendor/reset.css";
+@import "./components/componentes.css";
+@import "./components/tipografia.css";
+@import "./components/variavel.css";

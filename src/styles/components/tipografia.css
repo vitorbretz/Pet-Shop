@@ -1,0 +1,87 @@
+.text-g1{
+    font-size: 5rem;
+    line-height: 1.125;
+    font-family: var(--font4);
+    text-align: center;
+}
+.text-g2{
+    font-size: 3rem;
+    line-height: 1.125;
+    font-family: var(--font2);
+}
+.text-m1{
+    font-size: 3rem;
+    line-height: 1.125;
+    font-family: var(--font4);
+    text-align: center;
+}
+.text-m2{
+    font-size: 2rem;
+    line-height: 1.125;
+    font-family: var(--font4);
+    text-align: center;
+}
+.text-p1{
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-family: var(--font4);
+    text-align: center;
+}
+.paragraph-g1{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: var(--font2);
+}
+.paragraph-g2{
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-weight: 300;
+    font-family: var(--font1);
+    
+}
+.paragraph-m1{
+    font-size: 1.5rem;
+    line-height: 1.325;
+    font-family: var(--font1);
+}
+.paragraph-m2{
+    font-size: 1.3rem;
+    line-height: 1.225;
+    font-family: var(--font1);
+}
+.paragraph-p1{
+    font-size: 1.1rem;
+    line-height: 1.525;
+    font-family: var(--font1);
+    font-weight: 400;
+}
+.paragraph-p2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: var(--font1);
+}
+.paragraph-p3{
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: var(--font1);
+}
+.paragraph-p4{
+    font-size: 1rem;
+    line-height: 1.300;
+    font-family: var(--font1);
+    font-weight: 400;
+}
+
+.cor1{
+    color: #000;
+}
+.cor2{
+    color: #fff;
+}
+.cor3{
+    color: #af5f00;
+}
+.cor4{
+    color: #603809;
+}
