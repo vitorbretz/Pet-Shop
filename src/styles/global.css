@@ -60,3 +60,8 @@ header{
     border-radius: var(--borderRadios);
     
 }
+.icon{
+    
+    height: 40px;
+    background-size: 10px;
+}
