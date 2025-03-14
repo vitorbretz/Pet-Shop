@@ -23,3 +23,40 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
+header{
+    font-family: var(--font1);
+    
+    
+}
+.conteiner-header{
+    border-radius: var(--borderRadios);
+    display: flex;
+    height: 80px;
+    margin: 0 auto;
+    background-color: var(--cor4);
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 65px;
+}
+.btn-burguer ul{
+    display: flex;
+    display: none;
+}
+.btn-burguer{
+    padding: 0 10px;
+}
+.btn-burguer span{
+    justify-self: flex-end;
+    display: block;
+    width: 29px;
+    height: 4px;
+    background-color:var(--cor6);
+    margin: 5px;
+    border-radius: var(--borderRadios);
+    
+}
