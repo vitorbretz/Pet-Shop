@@ -26,11 +26,13 @@ html, body {
 
 header{
     font-family: var(--font1);
+    padding: 0 15px;
     
     
 }
 .conteiner-header{
-    border-radius: var(--borderRadios);
+    
+    border-radius: 0px 0px 8px 8px;
     display: flex;
     height: 80px;
     margin: 0 auto;
@@ -49,6 +51,7 @@ header{
 }
 .btn-burguer{
     padding: 0 10px;
+    cursor: pointer;
 }
 .btn-burguer span{
     justify-self: flex-end;
@@ -60,8 +63,33 @@ header{
     border-radius: var(--borderRadios);
     
 }
-.icon{
-    
-    height: 40px;
-    background-size: 10px;
+
+.conteudo-navigation{
+    display: flex;
+    gap: 15px;
 }
+.image-wrapper {
+    position: relative;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+  }
+  
+  .image-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s ease;
+  }
+  
+  .image-wrapper img.hover {
+    opacity: 0;
+  }
+  
+  .image-wrapper:hover img.default {
+    opacity: 0;
+  }
+  
+  .image-wrapper:hover img.hover {
+    opacity: 1;
+  }

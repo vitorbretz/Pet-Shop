@@ -1,0 +1,6 @@
+.background-main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/imgs/fundo/fundo.jpg');
+    background-position: left ;
+}
