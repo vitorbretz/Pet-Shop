@@ -16,9 +16,9 @@
     text-align: center;
 }
 .text-m2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.125;
-    font-family: var(--font4);
+    font-family: var(--font2);
     text-align: center;
 }
 .text-p1{
@@ -51,10 +51,10 @@
     font-family: var(--font1);
 }
 .paragraph-p1{
-    font-size: 1.1rem;
-    line-height: 1.525;
-    font-family: var(--font1);
-    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.255;
+    font-family: var(--font2);
+    font-weight: 500;
 }
 .paragraph-p2{
     font-size: 1.2rem;
