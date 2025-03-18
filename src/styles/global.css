@@ -36,7 +36,7 @@ header{
     display: flex;
     height: 80px;
     margin: 0 auto;
-    background-color: var(--cor4);
+    background-color: var(--cor4);background: linear-gradient(to right, #00c8ff, var(--cor3));
     justify-content: space-between;
     align-items: center;
 }
@@ -63,7 +63,9 @@ header{
     border-radius: var(--borderRadios);
     
 }
-
+#chk-toggle{
+    display: none;
+}
 .conteudo-navigation{
     display: flex;
     gap: 15px;
