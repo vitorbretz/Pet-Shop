@@ -20,6 +20,8 @@
     line-height: 1.125;
     font-family: var(--font2);
     text-align: center;
+    font-weight: 700;
+    text-shadow: 1.2px 1.2px 1.2px #000000c0;
 }
 .text-p1{
     font-size: 1.5rem;

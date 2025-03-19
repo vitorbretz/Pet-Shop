@@ -4,32 +4,38 @@
     background-image: url('../../assets/imgs/fundo/fundo.jpg');
     background-position: left ;
 }
-.main-conteiner{
+.slide-list{
     display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-content: end;
+    gap: 20px;
     height: 100%;
+    align-items: end;
+    cursor: pointer;  
 }
-main{
-    height: calc(100% - 80px);
-    
-    
+
+.slide-item{
+    flex-shrink: 0;
+    width: 100vw;
+    padding: 0 10px;  
 }
-.conteudo-main{
+.slide-img{
+    max-height: 400px;
+}
+.wapper{
+    height: calc(100vh - 80px);
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
-.conteudo-main h2{
-    font-weight: 700;
-    padding: 15px;
-    text-shadow: 2px 2px 1px #000000af;
-    
-    
-    
+.slide-wrapper{
+    height: 100%;
+    overflow: hidden;
 }
-.conteudo-main p {
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
     text-align: center;
-    padding: 0 15px 15px 15px;
+}
+.conteiner-img img{
+    margin: 0 auto;
 }
