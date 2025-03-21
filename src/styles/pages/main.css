@@ -5,8 +5,7 @@
     background-position: left ;
 }
 .slide-list{
-    display: flex;
-    gap: 20px;
+    display: flex; 
     height: 100%;
     align-items: end;
     cursor: pointer;  
@@ -38,4 +37,9 @@
 }
 .conteiner-img img{
     margin: 0 auto;
+}
+.img2-slide,
+.img3-slide{
+    position: relative;
+    left: -22px;
 }
