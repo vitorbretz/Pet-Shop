@@ -37,7 +37,7 @@ export default function slideShow() {
 
     function updateSlidePosition() {
         state.savedPosition = -state.currentIndex * state.slideWidth;
-        slideList.style.transition = 'transform 0.6s ease-in-out';
+        slideList.style.transition = 'transform 0.3s ease-in-out';
         slideList.style.transform = `translateX(${state.savedPosition}px)`;
 
         // Corrige a posição após a transição, caso esteja no clone
