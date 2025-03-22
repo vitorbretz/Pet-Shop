@@ -125,11 +125,50 @@ header{
   nav{
     display: none;
     text-align: center;
-    height: 0px;
+    
     flex-basis: 100%;
     transition: all 0.4s ease-in-out;
   }
   .active-menu{
     display: block;
 
+  }
+  @media screen and (min-width:800px){
+    .btn-burguer{
+      display: none;
+    }
+    .conteudo-navigation{
+      padding-right: 20px;
+      order: 3;
+      
+    }
+    #menu{
+      flex-direction: row;
+      top: 20px;
+      background: transparent;
+      position: static;
+      width: max-content;
+      gap: 30px;
+    }
+    #menu li{
+      padding: 5px;
+      border: none;
+      
+    }
+    #menu li:hover{
+      border-radius: 8px;
+      background-color: #395eae;
+    }
+    nav{
+      display: block;
+      order: 2;
+      flex-basis: auto;
+      
+    }
+    .conteiner-header{
+      flex-wrap: nowrap;
+    }
+    .header a {
+      order: 1;
+    }
   }
