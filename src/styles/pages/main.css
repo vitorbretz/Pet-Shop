@@ -11,6 +11,7 @@
     cursor: pointer;  
 }
 
+
 .slide-item{
     flex-shrink: 0;
     width: 100vw;
@@ -20,7 +21,7 @@
     max-height: 400px;
 }
 .wapper{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 72px);
     display: flex;
     align-items: center;
 }

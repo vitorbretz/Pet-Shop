@@ -5,7 +5,7 @@
     padding: 10px;
     margin-bottom: 20px;
     border-radius: var(--borderRadios2);
-    background-color: var(--cor4);background: linear-gradient(to right, #00c8ff, var(--cor3));
+    background: linear-gradient(to right, #3ecff7e3, #46a4f1,#395eae);
     transition:transform 0.2s ease-in-out;
     cursor: pointer;
     display: inline-block;
