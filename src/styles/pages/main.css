@@ -1,5 +1,5 @@
 .background-main{
-    width: 100vw;
+    width: calc(100vw -10px);
     height: 100vh;
     background-image: url('../../assets/imgs/fundo/fundo.jpg');
     background-position: left ;
@@ -21,7 +21,7 @@
     max-height: 400px;
 }
 .wapper{
-    height: calc(100vh - 72px);
+    height: calc(100vh - 69px);
     display: flex;
     align-items: center;
 }
@@ -43,4 +43,7 @@
 .img3-slide{
     position: relative;
     left: -22px;
+}
+.img3-slide{
+    height: 320px;
 }
