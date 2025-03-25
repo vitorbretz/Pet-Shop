@@ -60,6 +60,9 @@
     }
 }
 @media screen and (min-width: 800px){
+    .background-main{
+        background-position: bottom;
+    }
     .slide-item{
         display: flex;
         height: 100%;

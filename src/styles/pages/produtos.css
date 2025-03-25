@@ -1,0 +1,29 @@
+.conteiner-produtos{
+    background-color: var(--cor7);
+}
+.conteiner-produtos h2{
+    padding-top: 60px;
+}
+.content-produtos{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.itens-product{
+    background-color: #fff;
+}
+.itens-product ul li {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+.content-produtos h3{
+    color: var(--cor5);
+    ont-size: 1.1rem;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+.itens-product ul{
+    display: flex;
+    gap: 20px;
+}
