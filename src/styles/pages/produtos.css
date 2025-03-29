@@ -9,13 +9,20 @@
     margin: 0 auto;
     margin-top: 30px;
 }
+.content-produtos div{
+    margin-bottom: 20px;
+}
 .itens-product{
-    background-color: #fff;
+    
 }
 .itens-product ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
     width: 200px;
-    height: 200px;
     background-color: #fff;
+    border-radius: 20px;
 }
 .content-produtos h3{
     color: var(--cor5);
@@ -26,4 +33,40 @@
 .itens-product ul{
     display: flex;
     gap: 20px;
+}
+.itens-product ul li a{
+    padding: 6px;
+    display: block;
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    margin:  auto;
+    font-size: 0.8rem;
+    line-height: 1.300;
+    font-family: var(--font1);
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    
+}
+.itens-product ul li a::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2.3px; /* Espessura da borda */
+    background: linear-gradient(to right, #3ecff7e3, #46a4f1,#395eae);
+    border-radius: 20px; /* Mesmo raio da borda */
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.itens-product ul li a:hover{
+    background: linear-gradient(to right, #3ecff7e3, #46a4f1,#395eae);
+    color: #fff;
+}
+.itens-product h4{
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-align: center;
 }
