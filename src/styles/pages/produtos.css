@@ -9,12 +9,7 @@
     margin: 0 auto;
     margin-top: 30px;
 }
-.content-produtos div{
-    margin-bottom: 20px;
-}
-.itens-product{
-    
-}
+
 .itens-product ul li {
     display: flex;
     flex-direction: column;
@@ -23,10 +18,13 @@
     width: 200px;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: 1px 1px 3px #0000008a;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .content-produtos h3{
     color: var(--cor5);
-    ont-size: 1.1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     font-family: var(--font1);
 }
@@ -69,4 +67,19 @@
     font-weight: 400;
     font-size: 0.7rem;
     text-align: center;
+    height: 25px;
+}
+.preço-defalut{
+    font-size: 0.9rem;
+    color: var(--cor4);
+    text-decoration: line-through;
+    text-decoration-color: #2b2b2ba7;
+    
+}
+.preço-desconto{
+    font-size: 1.1rem;
+    color: var(--cor6);
+}  
+.itens-product img {
+    border-radius: 20px;
 }
