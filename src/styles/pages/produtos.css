@@ -18,6 +18,7 @@
     background-color: rgba(238, 238, 237, 0.851);
     padding: 30px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .itens-product{
     overflow: hidden;
@@ -98,3 +99,41 @@
     border-radius: 20px;
 }
 
+@media screen and (min-width: 1000px) {
+    article{
+        overflow: hidden;
+    }
+    .conteiner-produtos{
+        position: relative;
+        background-color: #e3e1e1b1;
+    }
+    .content-produtos{
+        background-color: #f9f8f8cf;
+    }
+    .conteiner-produtos::before{
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/imgs/detalhes/vecteezy_a-fluffy-cat-with-blue-eyes-sitting-down-on-transparent_46812042.png);
+        background-size: contain;
+        height: 400px;
+        width: 400px;
+        background-repeat: no-repeat;
+        top: 600px;
+        left: -220px;
+        z-index: 2;
+        transform: rotate(50deg);
+        
+    }
+    .conteiner-produtos::after{
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/imgs/detalhes/rigth-dog.png);
+        background-size: 100%;
+        height: 350px;
+        width:350px;
+        background-repeat: no-repeat;
+        top: 250px;
+        right: -180px;
+        transform: rotate(-30deg);
+    }
+}
