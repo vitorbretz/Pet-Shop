@@ -1,0 +1,12 @@
+.conteiner-profissional{
+    
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.img-profissional{
+    height: 350px;
+}
+.img-profissional img {
+    height: 100%;
+    width: 100%;
+}
