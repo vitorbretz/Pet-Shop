@@ -1,12 +1,38 @@
+
 .conteiner-profissional{
-    
     max-width: 1000px;
     margin: 0 auto;
 }
 .img-profissional{
     height: 350px;
+    width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #ffd900bb,var(--cor6) );
+    box-shadow: 6px 6px 20px #000;
 }
 .img-profissional img {
     height: 100%;
     width: 100%;
+}
+.content-profissional h2 {
+    padding-top: 60px;
+    width: 80%;
+    font-weight: 600;
+    color: #000;
+    margin: 0 auto;   
+}
+.content-profissional p {
+    padding-top: 20px;
+    width: 80%;
+    color: #3c3c3c;
+    margin: 0 auto;  
+}
+.content-profissional a {
+    margin: 20px auto;
+    display: block;
+    margin-top: 20px;
+    background: linear-gradient(to right, #ffd900bb,var(--cor6) );
+    color: #000;
+    font-family: var(--font1);
+    font-weight: 500;
 }
