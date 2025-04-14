@@ -1,0 +1,86 @@
+.conteiner-planos{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+}
+.planos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    
+}
+.planos .list {
+    width: 250px;
+    background-color: rgb(230, 233, 233);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: var(--font2);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 8px #000;
+}
+.planos .list:nth-child(2){
+    color: #fff;
+    background-color: var(--cor6);
+}
+.planos li h3 {
+    font-family: var(--font2);
+    text-align: center;
+    padding: 10px 0;
+}
+.planos li a {
+    margin: 0 auto;
+    display: block;
+    font-family: var(--font2);
+}
+.beneficios{
+    font-family: var(--font2);
+    margin: 0 auto;
+    width: max-content;
+    align-items: center;
+}
+.beneficios li {
+    padding: 10px;
+    position: relative;
+}
+.presoP{
+    text-align: center;
+}
+.beneficios li::before{
+    content: '';
+    background-image: url(../../assets/imgs/detalhes/paw_5068980.png);
+    height: 16px;
+    width: 16px;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -10px;
+}
+.presoP span{
+    font-size: 2rem;
+    
+    color: var(--cor);
+}
+@media screen and (min-width: 1000px) {
+   .planos{
+    flex-direction: row;
+   } 
+}
+@media screen and (min-width: 1000px) {
+    .conteiner-serviços::after{
+        content: "";
+        background-image: url(../../assets/imgs/detalhes/detalhe03.png);
+        position: absolute;
+        background-size:contain ;
+        width: 250px;
+        height: 250px;
+        background-repeat: no-repeat;
+        top:300px;
+        right: -170px;
+        
+    }
+}

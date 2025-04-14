@@ -1,0 +1,70 @@
+#servico{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.wapper-servic{
+    overflow-x: hidden;
+}
+.serviços{
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    justify-content: center;
+    
+}
+.conteiner-serviços{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    
+}
+.preso{
+    
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.serviços h3 {
+    font-size: 1.3rem;
+    color: var(--cor6);
+    font-weight: 700;
+    
+}
+.serviços li {
+    height: max-content;
+    flex-shrink: 0;
+    padding: 15px;
+    width: 200px;
+    border-radius: 40px;
+    background-color: var(--cor3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 3px 3px 8px #000;
+
+}
+.serviços li span{
+    color: var(--cor6);
+    font-size: 1rem;
+}
+.serviços p {
+    font-size: 0.8rem;
+    color: #f1f1f1eb;
+    height: 40px;
+}
+.serviços a {
+    
+    font-size: 0.7rem;
+}
+.icon{
+    background-color: var(--cor6);
+    padding: 10px;
+    border-radius: 50%;
+}
+

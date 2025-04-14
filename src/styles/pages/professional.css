@@ -36,3 +36,46 @@
     font-family: var(--font1);
     font-weight: 500;
 }
+@media screen and (min-width: 800px) {
+    .conteiner-profissional{
+        display: flex;
+        padding: 20px;
+        position: relative;
+    }
+    .content-profissional h2,
+    .content-profissional p{
+        text-align: start;
+    }
+    .content-profissional h2{
+        font-size: 2rem;
+
+    }
+    .content-profissional a{
+        margin-left: 59px;
+    }
+    .conteiner-profissional::after{
+        content: "";
+        background-image: url(../../assets/imgs/detalhes/patas.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 60px;
+        right: -230px;
+        height: 300px;
+        width: 300px;
+        
+    }
+    .conteiner-profissional::before{
+        content: "";
+        background-image: url(../../assets/imgs/detalhes/patas.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 20px;
+        left: -230px;
+        height: 300px;
+        width: 300px;
+        
+    }
+    
+}
