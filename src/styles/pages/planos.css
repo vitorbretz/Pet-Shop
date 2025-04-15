@@ -70,17 +70,3 @@
     flex-direction: row;
    } 
 }
-@media screen and (min-width: 1000px) {
-    .conteiner-serviços::after{
-        content: "";
-        background-image: url(../../assets/imgs/detalhes/detalhe03.png);
-        position: absolute;
-        background-size:contain ;
-        width: 250px;
-        height: 250px;
-        background-repeat: no-repeat;
-        top:300px;
-        right: -170px;
-        
-    }
-}
