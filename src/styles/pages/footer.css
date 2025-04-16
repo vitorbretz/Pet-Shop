@@ -41,6 +41,7 @@
     width: max-content;
     margin-right: 20px;
     grid-column: 2;
+    cursor: pointer;
 }
 
 .contado {

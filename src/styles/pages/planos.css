@@ -2,7 +2,7 @@
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    
+    position: relative;
     flex-direction: column;
 }
 .planos{
@@ -68,5 +68,31 @@
 @media screen and (min-width: 1000px) {
    .planos{
     flex-direction: row;
-   } 
+   }
+   .conteiner-planos::after{
+    content: "";
+    background-image: url(../../assets/imgs/detalhes/detalhe03.png);
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -205px;
+    position: absolute;
+    top: -80px;
+    rotate: -30deg;
+   }
+   .conteiner-planos::before{
+    content: "";
+    background-image: url(../../assets/imgs/detalhes/Design_sem_nome__6_-removebg-preview.png);
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -145px;
+    position: absolute;
+    bottom: -40px;
+    
+    
+   }  
+
 }
