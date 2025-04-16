@@ -1,0 +1,1 @@
+const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
