@@ -6,20 +6,20 @@
     justify-content: center;
     
 }
-.wapper-servic{
-    overflow-x: hidden;
+.wapper-servic {
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
-.serviços{
+.serviços {
     display: flex;
-    gap: 20px;
-    color: #fff;
+    gap: 15px;
     justify-content: center;
-    
+    min-width: max-content;
 }
-.conteiner-serviços{
-    max-width: 1000px;
+
+.conteiner-servicos{
+    width: 100vw;
     margin: 0 auto;
-    position: relative;
     padding: 20px;
     
 }

@@ -1,58 +1,65 @@
-.conteiner-footer{
-    max-width: 1000px;
+.conteiner-footer {
+    max-width: 100%;
+    width: 100%;
     border-radius: var(--borderRadios);
     margin: 0 auto;
-    background: linear-gradient(to right, #3ecff7e3, #46a4f1,#395eae);
-    
-    
+    background: linear-gradient(to right, #3ecff7e3, #46a4f1, #395eae);
 }
-.conteudo-footer{
-    
-   display: grid;
-   grid-template-columns: auto auto;
-   font-family: var(--font1);
-   grid-template-rows: auto 1fr 1fr;
-   
+
+.conteudo-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--font1);
+    grid-template-rows: auto 1fr auto;
 }
-.logo-footer{
-    grid-column: 1/-1;
-    
+
+.logo-footer {
+    grid-column: 1 / -1;
 }
+
 .conteiner-footer h3 {
     color: #fff;
     font-size: 1.3rem;
     margin-bottom: 15px;
 }
-.serve-footer{
+
+.serve-footer {
     width: max-content;
     padding-left: 20px;
-    
 }
-.social-media img{
+
+.social-media img {
     margin: 0 auto;
     height: 26px;
     width: 26px;
     margin-bottom: 10px;
 }
+
 .social-media {
+    padding-left: 20px;
+
     width: max-content;
     margin-right: 20px;
     grid-column: 2;
 }
-.contado{
+
+.contado {
     grid-row: 3;
     padding: 20px;
 }
-.conteudo-footer ul li{
+
+.conteudo-footer ul li {
     position: relative;
     padding-left: 20px;
     cursor: pointer;
 }
-.conteudo-footer ul li:hover{
+
+.conteudo-footer ul li:hover {
     color: #fff;
 }
-.conteudo-footer ul li::before{
-    content: " " ;
+
+.conteudo-footer ul li::before {
+    content: " ";
     position: absolute;
     background-image: url(../../assets/imgs/icones/world_5514637.png);
     height: 16px;
@@ -62,12 +69,26 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-@media screen and (min-width:1000px) {
-    .conteiner-footer{
+
+@media screen and (min-width: 1000px) {
+    .conteiner-footer {
         background-image: url(../../assets/imgs/container-img/133750831_10279098.jpg);
         background-position: right bottom;
         background-size: cover;
         height: 100%;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo-footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .social-media {
+        margin: 0;
+        grid-column: 1;
+        text-align: center;
     }
 }
