@@ -7,23 +7,26 @@ export default function initScrollSuave() {
       const section = document.querySelector(href);
   
       if (section) {
-        const targetPosition = section.offsetTop;
         const startPosition = window.pageYOffset;
+        const targetPosition = section.offsetTop;
         const distance = targetPosition - startPosition;
-        const duration = 700; // tempo total da animação em ms
-        let start = null;
   
-        function animationScroll(timestamp) {
-          if (!start) start = timestamp;
-          const elapsed = timestamp - start;
-          const progress = Math.min(elapsed / duration, 1);
+        const duration = 800; // tempo fixo em ms
+        const startTime = performance.now();
+  
+        function animate(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1); // de 0 a 1
+  
+          // movimento linear (sem easing)
           window.scrollTo(0, startPosition + distance * progress);
+  
           if (elapsed < duration) {
-            requestAnimationFrame(animationScroll);
+            requestAnimationFrame(animate);
           }
         }
   
-        requestAnimationFrame(animationScroll);
+        requestAnimationFrame(animate);
       }
     }
   

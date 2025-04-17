@@ -8,23 +8,31 @@
     display: flex; 
     height: 100%;
     align-items: end;
-    cursor: pointer;  
+    cursor: pointer;
+      
 }
 
 
 .slide-item{
+    height: 100%;
     flex-shrink: 0;
     width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box; 
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box; 
 }
 .slide-img{
     max-height: 400px;
 }
 .wapper{
-    height: calc(100vh - 69px);
+    height: 100vh ;
     display: flex;
     align-items: center;
+    
+    
+    
 }
 .slide-wrapper{
     height: 100%;
@@ -69,7 +77,7 @@
     .slide-item{
         display: flex;
         height: 100%;
-
+        flex-direction: row;
         justify-content: center;
         align-items: end;
         
