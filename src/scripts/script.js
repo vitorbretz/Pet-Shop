@@ -18,3 +18,4 @@ document.querySelectorAll('.wrapper-product').forEach(wrapper => {
 slideShow();
 menuShow();
 initScrollSuave();
+initAnimationScrow();

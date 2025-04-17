@@ -1,8 +1,12 @@
 .conteiner-produtos{
     background-color: var(--cor7);
+    padding-top: 20px;
+}
+#produtos{
+    margin-top: 20px;
 }
 .conteiner-produtos h2{
-    padding-top: 60px;
+    
     width: 80%;
     margin: 0 auto;
 }
