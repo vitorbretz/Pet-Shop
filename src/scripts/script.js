@@ -16,6 +16,4 @@ document.querySelectorAll('.wrapper-product').forEach(wrapper => {
 
 slideShow();
 menuShow();
-document.addEventListener('DOMContentLoaded', () => {
-  initScrollSuave();
-});
+initScrollSuave();
