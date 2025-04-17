@@ -1,6 +1,7 @@
 import slideShow from './modules/slide.js';
 import menuShow from './pages/header.js';
 import ScrowProduct from  '../scripts/modules/scrowProduct.js';
+import initScrollSuave from './modules/scrollSuave.js';
 
 
 document.querySelectorAll('.wrapper-product').forEach(wrapper => {
@@ -11,7 +12,10 @@ document.querySelectorAll('.wrapper-product').forEach(wrapper => {
     }
   });
 
-// scrowProduct.init()
+
 
 slideShow();
 menuShow();
+document.addEventListener('DOMContentLoaded', () => {
+  initScrollSuave();
+});
