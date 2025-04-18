@@ -2,7 +2,7 @@ import slideShow from './modules/slide.js';
 import menuShow from './pages/header.js';
 import ScrowProduct from  '../scripts/modules/scrowProduct.js';
 import initScrollSuave from './modules/scrollSuave.js';
-import initAnimationScrow from './modules/animationsScrow.js'
+import initAnimationScroll from './modules/animationsScrow.js'
 
 
 document.querySelectorAll('.wrapper-product').forEach(wrapper => {
@@ -18,4 +18,4 @@ document.querySelectorAll('.wrapper-product').forEach(wrapper => {
 slideShow();
 menuShow();
 initScrollSuave();
-initAnimationScrow();
+initAnimationScroll();

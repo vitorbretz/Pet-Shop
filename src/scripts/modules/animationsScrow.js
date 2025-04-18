@@ -1,15 +1,18 @@
-export default function initAnimationScrow(){
-    const sections = document.querySelectorAll('.js-scroll');
+export default function initAnimationScroll() {
+    const sections = document.querySelectorAll('.text-scroll');
+    console.log(sections)
+    const windowHeight = window.innerHeight * 0.75;
 
-    function animaScroll(){
-        sections.forEach((section)=>{
+    function animaScroll() {
+        sections.forEach((section) => {
             const sectionTop = section.getBoundingClientRect().top;
-            if(sectionTop < 0){
+            if (sectionTop < windowHeight) {
                 section.classList.add('scroll-ativo');
             }
-        })
+        });
     }
 
-    window.addEventListener('scroll', animaScroll)
-
+    animaScroll(); // ativa ao carregar
+    window.addEventListener('scroll', animaScroll);
 }
+
