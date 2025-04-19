@@ -39,7 +39,7 @@
 .opacity-img {
     opacity: 0;
     
-    transition: opacity 0.8s ease;
+    transition: opacity 1s ease;
 }
 
 .img-ativa {

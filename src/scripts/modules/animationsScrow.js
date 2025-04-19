@@ -1,7 +1,7 @@
 export default function initAnimationScroll() {
     const sections = document.querySelectorAll('.text-scroll');
     const windowHeight = window.innerHeight * 0.75;
-    const windowHeightImg = window.innerHeight ;
+    const windowHeightImg = window.innerHeight * 0.60;
     const opacityImg = document.querySelector('.opacity-img');
 
     function animaScroll() {

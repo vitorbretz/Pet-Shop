@@ -4,15 +4,15 @@ export default class ScrowProduct {
         this.wrapper = wrapper;
         this.dist = { finalPosition: 0, startX: 0, movement: 0 };
         this.bindEvent();
-      }
+    }
 
     moveSlide(distX) {
-    const maxMove = 0; // Define um limite máximo (ex: primeira posição)
-    const minMove = -(this.slide.scrollWidth - this.wrapper.offsetWidth); // Limite mínimo baseado no tamanho do conteúdo
+        const maxMove = 0;
+        const minMove = -(this.slide.scrollWidth - this.wrapper.offsetWidth);
 
-    const newPosition = Math.max(Math.min(distX, maxMove), minMove);
-    this.slide.style.transform = `translate3d(${newPosition}px, 0, 0)`;
-}
+        const newPosition = Math.max(Math.min(distX, maxMove), minMove);
+        this.slide.style.transform = `translate3d(${newPosition}px, 0, 0)`;
+    }
 
     updatePosition(clientX) {
         this.dist.movement = this.dist.startX - clientX;
@@ -36,25 +36,52 @@ export default class ScrowProduct {
 
     onEnd() {
         this.dist.finalPosition = this.dist.finalPosition - this.dist.movement;
+        this.slide.classList.add('smooth');
         this.wrapper.removeEventListener('mousemove', this.onMove);
         this.wrapper.removeEventListener('mouseup', this.onEnd);
         this.wrapper.removeEventListener('touchmove', this.onMove);
         this.wrapper.removeEventListener('touchend', this.onEnd);
+
+        setTimeout(() => {
+            this.slide.classList.remove('smooth');
+        }, 300);
     }
+
+    onWheel(event) {
+        const scrollSpeed = 1.5;
+        const delta = event.deltaY * scrollSpeed;
+        const finalPosition = this.dist.finalPosition - delta;
+    
+        // Limites
+        const maxMove = 0;
+        const minMove = -(this.slide.scrollWidth - this.wrapper.offsetWidth);
+    
+        // Verifica se pode mover
+        if (finalPosition <= maxMove && finalPosition >= minMove) {
+            event.preventDefault();
+            this.moveSlide(finalPosition);
+            this.dist.finalPosition = finalPosition;
+        }
+    }
+    
 
     addSlideEvents() {
         this.wrapper.addEventListener('mousedown', this.onStart);
         this.wrapper.addEventListener('touchstart', this.onStart);
+        this.wrapper.addEventListener('wheel', this.onWheel, { passive: false });
     }
 
     bindEvent() {
         this.onStart = this.onStart.bind(this);
         this.onMove = this.onMove.bind(this);
         this.onEnd = this.onEnd.bind(this);
+        this.onWheel = this.onWheel.bind(this);
     }
 
     init() {
-        this.addSlideEvents();
+        if (this.slide.scrollWidth > this.wrapper.offsetWidth) {
+            this.addSlideEvents();
+        }
         return this;
     }
 }

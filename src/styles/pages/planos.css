@@ -72,14 +72,14 @@
    .conteiner-planos::after{
     content: "";
     background-image: url(../../assets/imgs/detalhes/detalhe03.png);
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
-    right: -205px;
+    right: -365px;
     position: absolute;
-    top: -80px;
-    rotate: -30deg;
+    top: -150px;
+    rotate: -35deg;
    }
    .conteiner-planos::before{
     content: "";
