@@ -104,6 +104,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+    article{
+        overflow: hidden;
+    }
     
     .conteiner-produtos{
         position: relative;
