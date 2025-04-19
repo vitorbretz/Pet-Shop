@@ -1,6 +1,7 @@
 export default function initAnimationScroll() {
     const sections = document.querySelectorAll('.text-scroll');
     const windowHeight = window.innerHeight * 0.75;
+    const opacityImg = document.querySelector('.opacity-img')
 
     function animaScroll() {
         sections.forEach((section) => {
@@ -12,6 +13,7 @@ export default function initAnimationScroll() {
                 section.classList.remove('scroll-ativo');
             }
         });
+        
     }
 
     animaScroll(); // ativa ao carregar
