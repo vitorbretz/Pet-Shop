@@ -3,6 +3,16 @@ export default function initAnimationScroll() {
     const windowHeight = window.innerHeight * 0.75;
     const windowHeightImg = window.innerHeight * 0.60;
     const opacityImg = document.querySelector('.opacity-img');
+    const servicoAnimation = document.querySelectorAll('.servico-js');
+    let servicosAnimados = false;
+
+    function animaServicosSequencialmente() {
+        servicoAnimation.forEach((servico, index) => {
+            setTimeout(() => {
+                servico.classList.add('servico-ativo');
+            }, index * 200); // 200ms entre cada item
+        });
+    }
 
     function animaScroll() {
         sections.forEach((section) => {
@@ -24,11 +34,18 @@ export default function initAnimationScroll() {
                 opacityImg.classList.remove('img-ativa');
             }
         }
+
+        // Anima os serviços uma única vez ao entrar na tela
+        if (!servicosAnimados && servicoAnimation.length > 0) {
+            const servicoTop = servicoAnimation[0].getBoundingClientRect().top;
+
+            if (servicoTop < windowHeight && servicoTop > 0) {
+                animaServicosSequencialmente();
+                servicosAnimados = true;
+            }
+        }
     }
 
     animaScroll(); // ativa ao carregar
     window.addEventListener('scroll', animaScroll);
 }
-
-
-
