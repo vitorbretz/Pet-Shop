@@ -4,6 +4,7 @@ export default function initAnimationScroll() {
     const windowHeightImg = window.innerHeight * 0.60;
     const opacityImg = document.querySelector('.opacity-img');
     const servicoAnimation = document.querySelectorAll('.servico-js');
+    const profissionalAnimation = document.querySelector('.texto-animado')
     let servicosAnimados = false;
 
     function animaServicosSequencialmente() {
@@ -24,6 +25,14 @@ export default function initAnimationScroll() {
                 section.classList.remove('scroll-ativo');
             }
         });
+        if(profissionalAnimation){
+            const textTop = opacityImg.getBoundingClientRect().top;
+            if(textTop < windowHeightImg && textTop > 0){
+                profissionalAnimation.classList.add('text-ativo');
+            }else{
+                profissionalAnimation.classList.remove('text-ativo');
+            } 
+        }
 
         if (opacityImg) {
             const imgTop = opacityImg.getBoundingClientRect().top;
