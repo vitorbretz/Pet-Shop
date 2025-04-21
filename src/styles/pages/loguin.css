@@ -1,0 +1,81 @@
+.conteiner-loguin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%)
+    
+}
+.conteudo-loguin{
+    background-color: #e6e2e2e7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: center;
+    gap: 10px;
+    
+}
+.conteudo-loguin h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.img-loguin{
+    max-width: 500px;
+}
+.loguin-social li img {
+    width: 35px;
+    height: 35px;
+}
+.conteudo-loguin .botão{
+    box-shadow: none;
+    border: #ffffff;
+}
+.forgetPassword{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+
+}
+.forgetPassword:hover{
+    color: var(--cor3);
+}
+.botao-loguin{
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--cor3);
+}
+.loguin-social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.conteudo-loguin input[type="text"],
+input[type="password"]{
+    font-size: 1.3rem;
+    border: 2px solid var(--cor3);
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+.conteudo-loguin input[type="text"]:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    
+}
+.conteudo-loguin input[type="password"]:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
