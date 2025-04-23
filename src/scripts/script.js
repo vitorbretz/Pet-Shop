@@ -3,6 +3,7 @@ import menuShow from './pages/header.js';
 import ScrowProduct from  '../scripts/modules/scrowProduct.js';
 import initScrollSuave from './modules/scrollSuave.js';
 import initAnimationScroll from './modules/animationsScrow.js';
+import showPassword from './modules/showPassword.js';
 
 
 document.querySelectorAll('.wrapper-product').forEach(wrapper => {
@@ -19,3 +20,4 @@ slideShow();
 menuShow();
 initScrollSuave();
 initAnimationScroll();
+showPassword();

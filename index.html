@@ -51,14 +51,14 @@
                 </div>
                 <div class="conteudo-loguin">
                     <h2>Entrar com sua conta</h2>
-                    <input type="text" placeholder="Email ou telefone">
+                    <input type="text" placeholder="Email ou telefone" required>
                     <div class="senha-container">
-                        <input type="password" id="senha" placeholder="Digite sua senha">
-                        <button type="button" onclick="toggleSenha()">👁️</button>
+                        <input type="password" id="senha" placeholder="Digite sua senha" required>
+                        <button class="eyes" type="button" onclick="toggleSenha()"><img src="src/assets/imgs/icones/vision_8404107.png" alt=""></button>
                       </div>
                     <p class="forgetPassword">Esqueceu a senha?</p>
                     <h3>ou</h3>
-                    <input class="botao-loguin" type="button" value="Criar conta">
+                    <input class="botao-loguin" type="button" value="Entrar">
                     <h3>Entrar com</h3>
                     <ul class="loguin-social">
                         <li>
@@ -68,6 +68,7 @@
                             <img src="src/assets/imgs/rede-sociais/instagram_2111463 (2).png" alt="">
                         </li>
                     </ul>
+                    <p class="notcont">Não tem conta? <span>Criar conta</span></p>
                 </div>
             </div>          
         </header>
