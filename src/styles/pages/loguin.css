@@ -67,6 +67,7 @@
     text-align: center;
     gap: 10px;
     position: relative;
+    flex: 1;
     
 }
 .conteudo-loguin h2 {
@@ -74,7 +75,7 @@
     text-align: center;
 }
 .img-loguin{
-    max-width: 400px;
+    flex: 1.3;
 }
 .loguin-social li img {
     width: 35px;
@@ -151,4 +152,20 @@ input[type="password"]{
 .notcont span:hover{
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+@media (max-width: 900px) {
+    .img-loguin{
+        
+    }
+    .conteiner-loguin{
+        width: 80%;
+    }
+}
+@media (max-width: 650px){
+    .img-loguin{
+        display: none;
+    }
+    .conteiner-loguin{
+        width: 70%;
+    }
 }
